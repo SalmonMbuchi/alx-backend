@@ -40,8 +40,9 @@ class Server:
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-        """The goal here is that if between two queries, certain rows are removed
-        from the dataset, the user does not miss items from dataset when changing page.""" 
+        """The goal here is that if between two queries,
+        certain rows are removed from the dataset,
+        the user does not miss items from dataset when changing page."""
         assert index <= 1000
         data = self.indexed_dataset().get(index)
         if data is None:
