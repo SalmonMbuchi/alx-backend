@@ -63,6 +63,5 @@ class Server:
         aDict['data'] = self.get_page(page, page_size)
         aDict['next_page'] = page + 1 if page + 1 <= total_pages else None
         aDict['prev_page'] = page - 1 if page > 1 else None
-        aDict['total_pages'] = total_pages 
+        aDict['total_pages'] = total_pages
         return aDict
-        
