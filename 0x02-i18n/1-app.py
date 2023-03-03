@@ -12,4 +12,4 @@ class Config(object):
     """configuration class for flask app"""
     LANGUAGES = ['en', 'fr']
     BABEL_DEFAULT_LOCALE = 'en'
-    BABEL_DEFAULT_TIMEZONE = timezone('UTC')
+    BABEL_DEFAULT_TIMEZONE = 'UTC'
