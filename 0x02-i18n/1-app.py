@@ -15,4 +15,4 @@ class Config(object):
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
-app = Config()
+app.config.from_mapping(Config)
