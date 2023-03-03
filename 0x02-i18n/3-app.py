@@ -24,4 +24,5 @@ def get_locale():
 
 @app.route('/')
 def route():
+    """view function"""
     return render_template('3-index.html')

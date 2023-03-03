@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Basic Babel setup"""
+"""Determine best match"""
 from flask import Flask, request, render_template
 from flask_babel import Babel
 
@@ -24,4 +24,5 @@ def get_locale():
 
 @app.route('/')
 def index():
+    """View function"""
     return render_template('2-index.html')

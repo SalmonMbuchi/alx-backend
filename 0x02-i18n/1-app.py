@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Basic Babel setup"""
+"""Configuration class"""
 from flask import Flask, render_template
 from flask_babel import Babel
 
@@ -20,4 +20,5 @@ babel = Babel(app)
 
 @app.route('/')
 def index():
+    """View function"""
     return render_template('1-index.html')
