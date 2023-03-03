@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """Basic Babel setup"""
-from flask import Flask
+from flask import Flask, render_template
 from flask_babel import Babel
-from pytz import timezone
+
 
 app = Flask(__name__)
-babel = Babel(app)
 
 
 class Config(object):
@@ -16,3 +15,9 @@ class Config(object):
 
 
 app.config.from_object(Config)
+babel = Babel(app)
+
+
+@app.route('/')
+def index():
+    return render_template('1-index.html')
